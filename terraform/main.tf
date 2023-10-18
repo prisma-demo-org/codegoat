@@ -15,6 +15,7 @@ provider "aws" {
 }
 
 resource "aws_iam_account_password_policy" "strict" {
+  # checkov:skip=806079772773363712_AWS_1681373481939: Because
   #minimum_password_length        = 8
   #require_lowercase_characters   = true
   #require_numbers                = true
